@@ -1,0 +1,368 @@
+@import 'utilities.css';
+:root{
+    --primary:#dedb0d;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#f2f2f2;
+    --secondary:#070606;
+    --blue:#dedb0d;
+    --brown:#331900;
+    --red:#FF0000;
+}
+img{
+    border-radius: 50px;
+    padding: 0;
+    margin:0;
+    align-items: flex-start;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing:antialiased;
+}
+body{
+    height: auto;
+    font-family: 'Poppins',sans-serif;
+    background-color: lightblue;
+}
+
+
+header{
+    background-color: var(--brown);
+    
+    padding: 4rem;
+    height: 1000px;;
+
+}
+.container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right: 3rem;
+    font-size:28px ;
+    text-transform: uppercase;
+    transition: .3s ease;
+    justify-content: space-between;
+
+}
+header nav .left a:hover{
+    color:var(--primary);
+    text-decoration: underline;
+    transition-property:left right;
+    transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+    
+}
+header nav{
+    padding: 2rem 0 ;
+    margin-bottom: 10rem;
+}
+header nav .branding{
+    margin-left: -13rem;
+    margin-right: 3rem;
+
+}
+.hero .right{
+    color: var(--pure);
+}
+.hero .right h6{
+    font-size: 5rem;
+    text-decoration: underline;
+    color: var(--light);
+    margin-bottom: 1rem;
+}
+.hero .right h1{
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+
+}
+.hero.right p{
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+.flex-1{
+    flex: 1;
+}
+.justify-center{
+    justify-content: center;
+}
+section{
+    padding: 6rem 0;
+}
+section.about .about-me-img{
+    height:650px;
+    width:auto;
+    align-items: center;
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 5rem;
+    font-weight: 400;
+    margin-left: 15rem;
+
+}
+section.about h1 span{
+    color: var(--primary);  
+}
+section.about h2{
+    font-size: 3rem;
+    margin-bottom: 1 rem;
+    font-weight: 400;
+    white-space: nowrap;
+    margin-left: 6rem;
+}
+section.about h3{
+    font-size: 1.9rem;
+}
+section.about h6{
+    font-size: 1.8rem;
+    margin-top: 1rem;
+    font-family: 'lato', sans-serif;
+    margin-bottom: 1rem;
+    font-weight: 100;
+    white-space: nowrap;
+    margin-left: 8rem;
+}
+section .about p{
+    
+    margin-left: 200rem;
+    color: var(--ternary);
+    margin-bottom: 2rem;
+}
+section.about .social{
+    display: flex;
+    margin-left: 11rem;
+
+}
+section.about .social a{
+    background: var(--light);
+    align-items: center;
+    display: flex;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 8rem;
+
+}
+section.about .social a img{
+    align-items: center;
+    width: 100%;
+    height:100%
+}
+section.about .social a:hover{
+    background: var(--ternary);
+    transition: all 0.3s ease;
+
+}
+section.section-heading{
+    font-size: 1000px;
+}
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1 rem;
+    line-height:0.5 ;
+    top: -12rem;
+    padding: 10rem;;
+}
+.section-heading  span{
+    color: var(--primary);
+}
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Lato',sans-serif;
+    margin-bottom: 1 rem;
+    text-align: center;
+}
+section.services{
+    background:var(--light);
+}
+section.services h1{
+    font-size: 80px;;
+}
+section.services .card-wrapper{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr ;
+    grid-column-gap:6rem;
+    grid-row-gap: 6rem;
+
+}
+section.services .card-wrapper .card{
+    background-color: var(--dark);
+    padding: 3rem 2rem ;
+    position: relative;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+section.services .card-wrapper .card img{
+    position: absolute;
+    top:-3.5rem;
+    left :33%;
+}
+section.services .card-wrapper .card h2{
+    color: var(--pure);
+
+    font-weight: 400;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+section.services .card-wrapper .card p{
+    font-family: 'Lato',sans-serif;
+    color: var(--ternary);
+    font-size: 20px;
+    line-height: 1.6;
+}
+section.services .card-wrapper .card:hover{
+    background: var(--light);
+
+}
+section.services .card-wrapper .card:hover h2,section.services .card-wrapper .card:hover p{
+    color: var(--primary);
+}
+section.platform{
+    font-size: 50px;
+    background:var(--dark);
+    clip-path: polygon(0% 0%,100% 0%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
+padding-bottom: 20rem;
+}
+section.platform .section-heading {
+    color: var(--pure);
+}
+
+
+section.platform .card-wrapper{
+    display:grid ; 
+    justify-content: center ;
+    grid-gap: 15px;
+    grid-template-columns: auto auto auto auto auto ;
+   
+    
+
+}
+#plat{
+    height: 500px;
+    width:500px;
+    justify-content: center;
+    border-radius: 50%;
+    transform: scale(1);
+    transition: 1s ease-in-out;
+}
+
+#plat:hover{
+    transform: scale(2);
+    justify-content: space-between;
+    padding: 20px 20px;
+    flex: 3;
+   
+  width:200px;
+  height: 200px;
+
+}
+
+
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3rem;
+
+}
+
+section.contact .card-wrapper .card
+{
+    text-align: center;
+}
+section.contact .card-wrapper .card img{
+    height: 150px;
+    width: 150px;
+    margin-bottom: 3rem;
+}
+section.contact .card-wrapper .card h1{
+    font-size: 30px;
+    
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+section.contact  h1{
+    font-size: 5rem;
+    color: var(--ternary);
+}
+footer{
+    background-color: var(--dark);
+    padding: 5rem 0;
+}
+footer .footer-logo{
+    height:100%;
+    width: 200px;
+    margin-bottom: 3rem;
+    margin-left: 55rem;
+}
+footer .footer-social img{
+    
+        background: var(--light);
+        align-items: center;
+        display: flex;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-top: 20px;
+        margin-right: 8rem;
+        margin-left: 60rem;
+        margin-bottom: 2rem;
+}
+
+
+
+footer .copyright{
+    font-size: 18px;;
+    margin-left: 50rem;
+    color: var(--ternary);
+}
+section.message1{
+    font-size: 2rem;
+
+}
+
+input[type=text],input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    align-items: center;
+  }
+button[for=submit]{
+    padding: 15px 20px;
+    margin-left: 16rem;
+    margin-bottom: 1rem;
+  }
+.form1{
+    width:30%;
+    margin-left: 45rem;
+    background-color:var(--primary);
+}
+section.message1 h1{
+    margin-bottom:1rem;
+    margin-left: 178px;
+    font-size: 40px;
+}
+#content{
+    background-color: lightgreen;
+}
